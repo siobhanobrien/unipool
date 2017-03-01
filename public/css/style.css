@@ -1,0 +1,1067 @@
+/*!
+ * Start Bootstrap - New Age v3.3.7 (http://startbootstrap.com/template-overviews/new-age)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+ /* 
+|--------------------------------------------------------------------------
+|                           Start of Font & Formatting
+|--------------------------------------------------------------------------
+*/
+.heading-font {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.body-font {
+  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+}
+.alt-font {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+}
+a {
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  color: #21A4B7;
+}
+a:hover,
+a:focus {
+  color: #21A4B7;
+}
+hr {
+  max-width: 100px;
+  margin: 25px auto 0;
+  border-width: 1px;
+  border-color: rgba(34, 34, 34, 0.1);
+}
+hr.light {
+  border-color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* 
+|--------------------------------------------------------------------------
+|                           End of Font & Formatting
+|--------------------------------------------------------------------------
+*/
+
+/* 
+|--------------------------------------------------------------------------
+|                           Start of Nav Bar
+|--------------------------------------------------------------------------
+*/
+
+.navbar-default {
+  background-color: white;
+  background: rgb(68, 68, 68); //IE
+    background: rgba(0, 0, 0, 0.78); //NON-IE
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar-default .navbar-header .navbar-brand {
+  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: #21A4B7;
+}
+.navbar-default .navbar-header .navbar-brand:hover,
+.navbar-default .navbar-header .navbar-brand:focus {
+  color: #21A4B7;
+}
+.navbar-default .navbar-header .navbar-toggle {
+  font-size: 12px;
+  color: #222222;
+  padding: 8px 10px;
+}
+.navbar-default .nav > li > a {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+}
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
+  color: #222222;
+}
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {
+  color: #21A4B7;
+}
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus {
+  color: #21A4B7 !important;
+  background-color: transparent;
+}
+.navbar-default .nav > li.active > a:hover,
+.navbar-default .nav > li.active > a:focus:hover {
+  background-color: transparent;
+}
+@media (min-width: 768px) {
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .navbar-default .navbar-header .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .navbar-default .navbar-header .navbar-brand:hover,
+  .navbar-default .navbar-header .navbar-brand:focus {
+    color: white;
+  }
+  .navbar-default .nav > li > a,
+  .navbar-default .nav > li > a:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .navbar-default .nav > li > a:hover,
+  .navbar-default .nav > li > a:focus:hover {
+    color: grey;
+  }
+  .navbar-default.affix {
+    background-color: white;
+    border-color: rgba(34, 34, 34, 0.1);
+  }
+  .navbar-default.affix .navbar-header .navbar-brand {
+    color: #222222;
+  }
+  .navbar-default.affix .navbar-header .navbar-brand:hover,
+  .navbar-default.affix .navbar-header .navbar-brand:focus {
+    color: #21A4B7;
+  }
+  .navbar-default.affix .nav > li > a,
+  .navbar-default.affix .nav > li > a:focus {
+    color: #222222;
+  }
+  .navbar-default.affix .nav > li > a:hover,
+  .navbar-default.affix .nav > li > a:focus:hover {
+    color: #21A4B7;
+  }
+}
+/* 
+|--------------------------------------------------------------------------
+|                           End of Nav Bar
+|--------------------------------------------------------------------------
+*/
+
+/* 
+|--------------------------------------------------------------------------
+|                           Start of Login  
+|--------------------------------------------------------------------------
+*/
+
+.login {
+position: relative;
+  width: 100%;
+  height: 85%;
+  overflow-y: hidden;
+  background: url("../img/bg-pattern.png"), #7b4397;
+  /* fallback for old browsers */
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #21A4B7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #21A4B7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+.login-content {
+  text-align: center;
+  padding: 150px 0 50px;
+  position: relative;
+}
+ .login-content {
+    text-align: left;
+    padding: 0;
+    height: 70vh;
+}
+ .login-content .login-content-inner {
+    max-width: none;
+    margin: 0;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    transform: translateY(-50%);
+}
+/* 
+|--------------------------------------------------------------------------
+|                            End of Login
+|--------------------------------------------------------------------------
+*/
+/* 
+|--------------------------------------------------------------------------
+|                            Start of Homepage Header 
+|--------------------------------------------------------------------------
+*/
+.home {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  overflow-y: hidden;
+  background: url("../img/bg-pattern.png"), #7b4397;
+  /* fallback for old browsers */
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+.header-content {
+    text-align: left;
+    padding: 0;
+    height: 100vh;
+}
+.header-content .header-content-inner {
+    max-width: none;
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+}
+ .header-content-inner h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.homepage-content {
+    max-width: none;
+    margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    
+}
+/* 
+|--------------------------------------------------------------------------
+|                            End of Homepage Header 
+|--------------------------------------------------------------------------
+*/
+/* 
+|--------------------------------------------------------------------------
+|                            Start of Trip Header 
+|--------------------------------------------------------------------------
+*/
+ .trip {
+position: relative;
+  width: 100%;
+  height: 85%;
+  overflow-y: hidden;
+  background: url("../img/bg-pattern.png"), #7b4397;
+  /* fallback for old browsers */
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #21A4B7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #21A4B7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+.head-content {
+    text-align: left;
+    padding: 0;
+    height: 60vh;
+}
+.head-content .head-content-inner {
+    max-width: none;
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+}
+ .head-content-inner h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.searchbar-content {
+    max-width: none;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 62%;
+    width: 400px;
+    height: 400px;
+    
+}
+
+/* 
+|--------------------------------------------------------------------------
+|                            End of Trip Header 
+|--------------------------------------------------------------------------
+*/
+/* 
+|--------------------------------------------------------------------------
+|                            Start of Adding Trip Header 
+|--------------------------------------------------------------------------
+*/
+ .edit {
+position: relative;
+  width: 100%;
+  height: 20%;
+  overflow-y: hidden;
+  background: url("../img/bg-pattern.png"), #7b4397;
+  /* fallback for old browsers */
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #21A4B7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #21A4B7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+.edit-content {
+    text-align: left;
+    padding: 0;
+    height: 20vh;
+}
+.edit-content .edit-content-inner {
+    max-width: none;
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+}
+ .edit-content-inner h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.edit-searchbar-content {
+    max-width: none;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 55%;
+    
+}
+
+/* 
+|--------------------------------------------------------------------------
+|                          End of Adding Trip Header
+|--------------------------------------------------------------------------
+*/
+/* 
+|--------------------------------------------------------------------------
+|                          Start of Message Header
+|--------------------------------------------------------------------------
+*/
+
+ .message {
+position: relative;
+  width: 100%;
+  height: 85%;
+  overflow-y: hidden;
+  background: url("../img/bg-pattern.png"), #7b4397;
+  /* fallback for old browsers */
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #21A4B7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #21A4B7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+.message-content {
+    text-align: center;
+  padding: 70px 50px;
+  position: relative;
+  left: 32%;
+}
+.message-head{
+  position: relative;
+
+}
+.profile-content{
+  position: absolute;
+  left:30%;
+}
+.edit-content .edit-content-inner {
+    max-width: none;
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+}
+ .message-content-inner h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.message-searchbar-content {
+    max-width: none;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 55%;
+    
+}
+
+/* 
+|--------------------------------------------------------------------------
+|                          End of Message Header
+|--------------------------------------------------------------------------
+*/
+/* 
+|--------------------------------------------------------------------------
+|                           Start of Profile Header
+|--------------------------------------------------------------------------
+*/
+header .profile {
+position: relative;
+  width: 100%;
+  height: 65%;
+  overflow-y: hidden;
+  background: url("../img/bg-pattern.png"), #7b4397;
+  /* fallback for old browsers */
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #1A3049);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #1A3049);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+header .profile-content {
+  text-align: center;
+  padding: 70px 50px;
+  position: relative;
+}
+.profile-head{
+  position: relative;
+
+}
+.profile-content{
+  position: absolute;
+  left:30%;
+}
+.profile-content h1 {
+  font-size: 30px;
+}
+.profile-content h2 {
+  font-size: 15px;
+}
+/* 
+|--------------------------------------------------------------------------
+|                           End of Profile Header
+|--------------------------------------------------------------------------
+*/
+
+/* 
+|--------------------------------------------------------------------------
+|                          Start of Trip Content
+|--------------------------------------------------------------------------
+*/
+.trip_homepage {
+  height: 300px;
+  width: 100%;
+  padding: 50px 50px;
+}
+.trip_homepage .white{
+background-color: #ffffff;
+-webkit-box-shadow: 7px 10px 5px -7px rgba(211,211,211,1);
+-moz-box-shadow: 7px 10px 5px -7px rgba(211,211,211,1);
+box-shadow: 7px 10px 5px -7px rgba(211,211,211,1);
+margin: 20px 10px 10px 20px;
+margin-left: 130px;
+}
+.trip_homepage #trip_size{
+  height: 450px;
+}
+.trip-content {
+  text-align: center;
+  padding: 50px 50px;
+  position: relative;
+  color: white;
+  top: 0%;
+  left: -2%;
+}
+/* 
+|--------------------------------------------------------------------------
+|                          End of Trip Content
+|--------------------------------------------------------------------------
+*/
+/* 
+|--------------------------------------------------------------------------
+|                          Start of Show Trip Content
+|--------------------------------------------------------------------------
+*/
+.show_homepage {
+  height: 300px;
+  width: 100%;
+  padding: 50px 50px;
+}
+.show_homepage .white{
+background-color: #ffffff;
+-webkit-box-shadow: 7px 10px 5px -7px rgba(211,211,211,1);
+-moz-box-shadow: 7px 10px 5px -7px rgba(211,211,211,1);
+box-shadow: 7px 10px 5px -7px rgba(211,211,211,1);
+margin: 20px 10px 10px 20px;
+margin-left: 400px;
+}
+.show_homepage #show_size{
+  height: 450px;
+}
+.show-content {
+  text-align: center;
+  padding: 50px 50px;
+  position: relative;
+  color: white;
+  top: 0%;
+  left: -2%;
+}
+/* 
+|--------------------------------------------------------------------------
+|                          End of Show Trip Content
+|--------------------------------------------------------------------------
+*/
+/* 
+|--------------------------------------------------------------------------
+|                          Start of Profile Content
+|--------------------------------------------------------------------------
+*/
+.latest_trips{
+  height: 300px;
+  width: 100%;
+}
+.latest_trips #trip_column{
+  height: 100%;
+}
+.latest_trips .pink{
+  background-color: #9B4474;
+}
+.latest_trips .blue{
+  background-color: #21A4B7;
+}
+.latest_trips .navy{
+  background-color: #1A3049;
+}
+.image-content {
+  text-align: center;
+  padding: 50px 50px;
+  position: relative;
+  color: white;
+  top: 0%;
+  left: -2%;
+}
+.image-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: white;
+}
+.image-content-pink p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: white;
+}
+.image-content-pink a {
+  font-size: 12px;
+  color: white;
+}
+.image-content-navy p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: white;
+}
+.image-content-pink {
+  text-align: center;
+  padding: 50px 0px;
+  position: relative;
+  color: white;
+  top: 0%;
+  left: -2%;
+}
+.image-content-navy {
+  text-align: center;
+  padding: 50px 0px;
+  position: relative;
+  color: white;
+  top: 0%;
+  left: -2%;
+}
+/* 
+|--------------------------------------------------------------------------
+|                          End of Profile Content
+|--------------------------------------------------------------------------
+*/
+
+/* 
+|--------------------------------------------------------------------------
+|                           Start of About Homepage
+|--------------------------------------------------------------------------
+*/
+.about {
+  padding: 100px 0;
+
+  background-color: white;
+}
+.about h2 {
+  font-size: 50px;
+}
+.vira-card{
+  text-align: center;
+
+  /*margin-bottom: 45px;*/
+}
+.vira-card .vira-card-header{
+  margin-bottom: 45px;
+
+
+}
+.vira-card .vira-card-header .card-icon{
+  border: 1px solid #21A4B7;
+  border-radius: 100%;
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  line-height: 120px;
+  position: relative;
+
+}
+.vira-card .vira-card-header .card-icon .fa{
+  margin-top: 45px;
+  font-size: 30px;
+
+}
+.vira-card .vira-card-header .card-icon:after{
+  content: '';
+  height: 100px;
+  width: 100px;
+  background-color: #21A4B7;
+  border-radius: 100%;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+
+}
+.vira-card .vira-card-header .card-icon span{
+  color: #fff;
+  font-size: 45px;
+  position: relative;
+  z-index: 1;
+
+}
+.vira-card .vira-card-content h3{
+  position: relative;
+  margin-bottom: 60px
+}
+.vira-card .vira-card-content h3:after{
+  content: '';
+  height: 1px;
+  width: 44px;
+  background-color: #21A4B7;
+  position: absolute;
+  top: 52px;
+  left: calc(50% - 22px);
+}
+.vira-card .vira-card-content p{
+  font-size: 15px;
+}
+.vira-card .vira-card-content .social-icons{
+  margin-top: 30px;
+}
+
+/*Button*/
+.vira-btn{
+  border-color: #21A4B7;
+  font-style: italic;
+  color: #21A4B7;
+  border-radius: 0;
+  letter-spacing: 3px;
+  padding: 15px 80px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.vira-btn:hover{
+  background-color: #21A4B7;
+  color: #fff;
+}
+.vira-card .vira-card-header .card-icon:after{
+  transition: all 0.3s ease-in-out;
+}
+.vira-card:hover .vira-card-header .card-icon:after{
+  height: 120px;
+  width: 120px;
+  top: -1px;
+  left: -1px;
+}
+.title{
+  position: relative;
+  margin-bottom: 100px;
+}
+.title:after{
+  content: '';
+  height: 5px;
+  width: 40px;
+  background-color: #21A4B7;
+  position: absolute;
+  top: 81px;
+  left: calc(50% - 20px);
+}
+
+/* 
+|--------------------------------------------------------------------------
+|                           End of About Hoempage
+|--------------------------------------------------------------------------
+*/
+/* 
+|--------------------------------------------------------------------------
+|                           Start of Button CSS
+|--------------------------------------------------------------------------
+*/
+.bg-primary {
+  background: #21A4B7;
+  background: -webkit-linear-gradient(#21A4B7, #fdc539);
+  background: linear-gradient(#21A4B7, #fdc539);
+}
+.text-primary {
+  color: #21A4B7;
+}
+.btn-outline {
+  color: white;
+  border-color: white;
+  border: 1px solid;
+}
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+  color: #21A4B7;
+  background-color: #ffffff;
+  border-color: #ffffff;
+
+}
+.btn-outline-trip {
+  color: #ffffff;
+  border-color: #21A4B7;
+  border: 1px solid;
+  background-color: #21A4B7;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+.btn-outline-trip:hover,
+.btn-outline-trip:focus,
+.btn-outline-trip:active,
+.btn-outline-trip.active {
+  color: #21A4B7;
+  background-color: #ffffff;
+  border-color: #21A4B7;
+
+}
+.btn-outline-edit {
+  color: #21A4B7;
+  background-color: #ffffff;
+
+}
+.btn-outline-edit:hover,
+.btn-outline-edit:focus,
+.btn-outline-edit:active,
+.btn-outline-edit.active {
+  color: #21A4B7;
+  background-color: #ffffff;
+
+
+}
+.btn {
+  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 300px;
+}
+.btn-xl {
+  padding: 15px 45px;
+  font-size: 11px;
+}
+
+/* 
+|--------------------------------------------------------------------------
+|                           End of Button CSS
+|--------------------------------------------------------------------------
+*/
+
+/* 
+|--------------------------------------------------------------------------
+|                           Start of Footer
+|--------------------------------------------------------------------------
+*/
+
+footer {
+  padding: 100px 0 75px;
+}
+footer .list-inline {
+  margin-top: 60px;
+  padding: 0;
+}
+
+/* 
+|--------------------------------------------------------------------------
+|                           End of Footer
+|--------------------------------------------------------------------------
+
+
+/* 
+|--------------------------------------------------------------------------
+|                           Start of Homepage Timeline
+|--------------------------------------------------------------------------
+*/
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 2px;
+  background-color: grey;
+  left: 570px;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 50px;
+  position: relative;
+  min-height: 50px;
+}
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+  clear: both;
+}
+.timeline > li .timeline-panel {
+  width: 100%;
+  float: right;
+  padding: 0 20px 0 100px;
+  position: relative;
+  text-align: left;
+}
+.timeline > li .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline > li .timeline-image {
+  left: 0;
+  margin-left: 0;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+  background-color: #21A4B7;
+  color: white;
+  border-radius: 100%;
+  border: 7px solid #1A3049;
+  text-align: center;
+}
+.timeline > li .timeline-image h4 {
+  font-size: 10px;
+  margin-top: 12px;
+  line-height: 14px;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  text-align: left;
+  padding: 0 20px 0 100px;
+}
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+.timeline .timeline-heading h4 {
+  margin-top: 0;
+  color: inherit;
+}
+.timeline .timeline-heading h4.subheading {
+  text-transform: none;
+}
+.timeline .timeline-body > p,
+.timeline .timeline-body > ul {
+  margin-bottom: 0;
+}
+  .timeline > li {
+    margin-bottom: 100px;
+    min-height: 100px;
+  }
+  .timeline > li .timeline-panel {
+    width: 41%;
+    float: left;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+  .timeline > li .timeline-image {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 13px;
+    margin-top: 16px;
+    line-height: 18px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    text-align: left;
+    padding: 0 30px 20px 20px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+  .timeline > li .timeline-image h4 {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 26px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+  .timeline > li .timeline-image h4 {
+    margin-top: 40px;
+  }
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+
+/* 
+|--------------------------------------------------------------------------
+|                           End of Homepage Timeline
+|--------------------------------------------------------------------------
+*/
+
+/* 
+|--------------------------------------------------------------------------
+|                      Start of Font Awesome Search Button
+|--------------------------------------------------------------------------
+*/
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+.search { position: relative; }
+.search input { text-indent: 30px;}
+.search .fa-search
+ { 
+  color: #A0A0A0;
+  position: absolute;
+  top: 46px;
+  left: 15px;
+  font-size: 15px;
+}
+
+.fa-arrow-right
+ { 
+  color: #21A4B7;
+}
+.fa-calendar-o
+ { 
+  color: #21A4B7;
+}
+.fa-clock-o
+ { 
+  color: #21A4B7;
+}
+.fa-credit-card
+ { 
+  color: #21A4B7;
+}
+.fa-credit-card
+ { 
+  color: #21A4B7;
+}
+.fa-users
+ { 
+  color: #21A4B7;
+}
+.fa-map-marker
+ { 
+  color: #21A4B7;
+}
+.fa-file
+{ 
+  color: white;
+}
+
+/* 
+|--------------------------------------------------------------------------
+|                      End of Font Awesome Search Button
+|--------------------------------------------------------------------------
+*/
+/* 
+|--------------------------------------------------------------------------
+|                      Start of Comments
+|--------------------------------------------------------------------------
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
